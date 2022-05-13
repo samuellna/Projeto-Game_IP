@@ -152,8 +152,8 @@ void GameMechanics(Background *background,SetGame *set,Plataform *platafoma, Pla
 		fanatico->stop = 1;
 	if(player->esperaHit != 0)
 		player->esperaHit--;
-	if(CheckCollisionRecs(player->rec,fanatico->rec) && player->esperaHit == 0){
-		player->vida--;
+	if(CheckCollisionRecs(player->rec,fanatico->rec) && player->esperaHit == 0 && fanatico->atack == 0){
+		fanatico->atack = 1;
 		player->esperaHit = 451;
 	}
 

@@ -48,9 +48,11 @@ void InitVar(Background *background,Plataform *platafoma,SetGame *set,Player *pl
 	fanatico->hp = 12;
 	fanatico->direction = -1;
 	fanatico->stop = 0;
+	fanatico->atack = 0;
+	fanatico->die = 0;;
 	fanatico->enemyPosition = (Vector2){3350, 580};
-	fanatico->rec.width = fanatico->stop_right.width;
-	fanatico->rec.height = fanatico->stop_right.height;
+	fanatico->rec.width = fanatico->idle_right.width;
+	fanatico->rec.height = fanatico->idle_right.height;
 	fanatico->rec.x = fanatico->enemyPosition.x;
 	fanatico->rec.y = fanatico->enemyPosition.y; //POSICAO INICIAL DO FANATICO
 }

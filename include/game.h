@@ -31,11 +31,17 @@ typedef struct{ //ATRIBUTOS DO FANATICO
 	int damage;
 	int direction;
 	int stop;
+	int atack;
+	int die;
 	Vector2 enemyPosition;
 	Texture2D walk_right;
 	Texture2D walk_left;
-	Texture2D stop_left;
-	Texture2D stop_right;
+	Texture2D idle_left;
+	Texture2D idle_right;
+	Texture2D atack_right;
+	Texture2D atack_left;
+	Texture2D die_right;
+	Texture2D die_left;
 	Rectangle rec;
 }Fanatico;
 
@@ -63,6 +69,7 @@ typedef struct{ //TEXTURAS BACKGROUND DO GAME
 
 typedef struct{ //BACKGROUND MENU
 	Texture2D	background;
+	Texture2D	title;
 	int	start;
 	int inGame;
 	int exit;
